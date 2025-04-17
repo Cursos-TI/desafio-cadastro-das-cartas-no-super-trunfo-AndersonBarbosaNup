@@ -4,11 +4,10 @@
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 // Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
 
 int main() {
     char estado[1];
-    int codigocarta;
+    char codigocarta[3];
     char cidade[50];
     int populacao;
     float area;
@@ -16,7 +15,7 @@ int main() {
     int pturistico;
 
     char estado1[1];
-    int codigocarta1;
+    char codigocarta1[3];
     char cidade1[50];
     int populacao1;
     float area1;
@@ -29,7 +28,7 @@ int main() {
     scanf("%s", &estado);
 
     printf("Digite o código da carta de 01 a 04: \n");
-    scanf("%d", &codigocarta);
+    scanf("%s", &codigocarta);
 
     printf("Digite o nome da cidade: \n");
     scanf("%s", &cidade);
@@ -53,7 +52,7 @@ int main() {
     scanf("%s", &estado1);
 
     printf("Digite o código da carta de 01 a 04: \n");
-    scanf("%d", &codigocarta1);
+    scanf("%s", &codigocarta1);
 
     printf("Digite o nome da cidade: \n");
     scanf("%s", &cidade1);
