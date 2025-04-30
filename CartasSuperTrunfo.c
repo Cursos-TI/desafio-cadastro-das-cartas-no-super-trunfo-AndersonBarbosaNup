@@ -1,11 +1,9 @@
 #include <stdio.h>
 
 // Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-
-// Declaraçã de variáveis
 
 int main() {
+    // Declaraçã de variáveis
     char estado[1];
     char codigocarta[3];
     char cidade[50];
@@ -107,5 +105,5 @@ int main() {
     printf("Densidade Populacional: %.2f, hab/Km2\n", dpopulacional1);
     printf("PIB per Capta: %.2f, reais\n", pibpercapita1);
 
-        return 0;
+    return 0;
 }
