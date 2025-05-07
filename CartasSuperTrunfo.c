@@ -6,7 +6,7 @@ int main() {
     // Declaraçã de variáveis
     char estado[1];
     char codigocarta[3];
-    char cidade[50];
+    char cidadeN[50];
     int populacao;
     float area;
     float pib;
@@ -35,7 +35,7 @@ int main() {
     scanf("%s", &codigocarta);
 
     printf("Digite o nome da cidade: \n");
-    scanf("%s", &cidade);
+    scanf("%s", &cidadeN);
 
     printf("Digite a população: \n");
     scanf("%d", &populacao);
@@ -86,7 +86,7 @@ int main() {
     printf("Carta 1: \n");
     printf("Estado: %s\n", estado);
     printf("Código: %s\n", codigocarta);
-    printf("Nome da cidade: %s\n", cidade);
+    printf("Nome da cidade: %s\n", cidadeN);
     printf("População: %d\n", populacao);
     printf("Área: %.2f, Km2\n", area);
     printf("PIB: %.2f, bilhões de reais\n", pib);
@@ -107,8 +107,11 @@ int main() {
     
     //Implementando decisões
 
+    printf("Carta 1 -  %s: %.2f \n", cidadeN, area);
+    printf("Carta 2 -  %s: %.2f \n", cidade1, area1);
+
     if( area > area1){
-        printf("A cidade %s é a vencedora.\n", cidade);
+        printf("A cidade %s é a vencedora.\n", cidadeN);
     } else{
         printf("A cidade %s é a vencedora. \n", cidade1);
     }
