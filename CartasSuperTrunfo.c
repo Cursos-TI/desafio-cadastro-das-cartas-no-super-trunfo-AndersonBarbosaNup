@@ -104,6 +104,15 @@ int main() {
     printf("Número de Pontos Turísticos: %d\n", pturistico1);
     printf("Densidade Populacional: %.2f, hab/Km2\n", dpopulacional1);
     printf("PIB per Capta: %.2f, reais\n", pibpercapita1);
+    
+    //Implementando decisões
+
+    if( area > area1){
+        printf("A cidade %s é a vencedora.\n", cidade);
+    } else{
+        printf("A cidade %s é a vencedora. \n", cidade1);
+    }
+
 
     return 0;
 }
