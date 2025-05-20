@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 // Desafio Super Trunfo - Países
 
@@ -23,6 +25,8 @@ int main() {
     int pturistico1;
     float dpopulacional1;
     float pibpercapita1;
+
+    int escolhaJogador1, escolhaJogador2;
 
     //Entrada de dados para as cartas.
 
@@ -73,7 +77,82 @@ int main() {
     printf("Digite o número de pontos turísticos: \n");
     scanf("%d", &pturistico1);
 
-    //Calculando Densidade e PIB.
+    //Criando o Menu.
+
+    printf("*** Super Trunfo ***");
+    printf("### Escolha uma opção ###");
+    printf("1. Nome da cidade 1");
+    printf("2. População");
+    printf("3. Áre");
+    printf("4. PIB");
+    printf("5. Número de Pontos Turísticos");
+    printf("6. Densidade Demográfica");
+
+    switch (escolhaJogador1)
+    {
+    case 1:
+        printf("Cidade 1: %s\n", cidadeN);
+        break;
+    case 2:
+        printf("População 1: %d\n", populacao);
+        break;
+    case 3:
+        printf("Área 1: %.2f\n", area);
+        break;
+    case 4:
+        printf("PIB 1: %.2f\n", pib);
+        break;
+    case 5:
+        printf("Número de Pontos Turísticos 1: %d\n", pturistico);
+        break;
+    case 6:
+        printf("Densidade Demográfica 1: %.2f\n", dpopulacional);
+        break;
+    
+    default:
+        printf("Opção Inválida! Tente Novamente.\n");
+        break;
+    }
+
+    switch (escolhaJogador2)
+    {
+    case 1:
+        printf("Cidade 1: %s\n", cidade1);
+        break;
+    case 2:
+        printf("População 1: %d\n", populacao1);
+        break;
+    case 3:
+        printf("Área 1: %.2f\n", area1);
+        break;
+    case 4:
+        printf("PIB 1: %.2f\n", pib1);
+        break;
+    case 5:
+        printf("Número de Pontos Turísticos 1: %d\n", pturistico1);
+        break;
+    case 6:
+        printf("Densidade Demográfica 1: %.2f\n", dpopulacional1);
+        break;
+    
+    default:
+        printf("Opção Inválida! Tente Novamente.\n");
+        break;
+    }
+
+    if (escolhaJogador1 == escolhaJogador2)
+    {
+        printf("### O Jogo Empatou ###");
+    } else if((escolhaJogador1 > escolhaJogador2) || (escolhaJogador1 < escolhaJogador2));
+    {
+        printf(" *** O Jogador 1 é o vencedor ***\n");
+    }
+        else {
+            printf("*** O Jogador 2 é o vencedor ***\n");
+        }
+
+
+    /*Calculando Densidade e PIB.
 
     dpopulacional = (populacao / area);
     pibpercapita = (pib / populacao);
@@ -115,6 +194,7 @@ int main() {
     } else{
         printf("A cidade %s é a vencedora. \n", cidade1);
     }
+        */
 
 
     return 0;
